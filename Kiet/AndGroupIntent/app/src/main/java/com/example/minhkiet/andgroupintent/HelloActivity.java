@@ -1,4 +1,4 @@
-package com.example.minhkiet.andgroupintent;
+﻿package com.example.minhkiet.andgroupintent;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -32,7 +32,7 @@ public class HelloActivity extends AppCompatActivity implements View.OnClickList
         String name = bundle.getString("name");
 
         if (name != null)
-            tv_hello.setText("Chao " + name + "!");
+            tv_hello.setText("Chào " + name + "!");
 
         // nhan du lieu number
         number = bundle.getInt("number");
