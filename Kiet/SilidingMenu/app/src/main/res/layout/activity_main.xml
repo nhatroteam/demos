@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    >
+
+    <!-- content main layout-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/contentMain">
+
+    </RelativeLayout>
+
+    <!-- sliding menu-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/slidingMenu"
+        android:layout_marginRight="56dp"
+        android:layout_gravity="start"
+        android:orientation="vertical">
+
+        <!-- header sliding menu-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#5C7F6C"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@android:drawable/ic_menu_myplaces" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Messi Leo"
+                android:textSize="14sp"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="leomessi@gmail.com"
+                android:textSize="14sp"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+        <!-- list item-->
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lvSlidingMenu"
+            android:background="#8BBFA2"
+            android:choiceMode="singleChoice"
+            >
+        </ListView>
+
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>
